@@ -11,6 +11,7 @@ import { PipeComponent } from './pipe/pipe.component';
 import { InputOutputComponent } from './input-output/input-output.component';
 import { MerhabaComponent } from './merhaba/merhaba.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { ListeComponent } from './liste/liste.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DirectivesComponent } from './directives/directives.component';
     PipeComponent,
     InputOutputComponent,
     MerhabaComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    ListeComponent
   ],
   imports: [
     BrowserModule,

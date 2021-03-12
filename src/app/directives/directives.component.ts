@@ -17,6 +17,9 @@ export class DirectivesComponent implements OnInit {
     { ad: 'fatma' },
   ];
 
+  gunler = ['Pazartesi', 'salı', 'çarşamba'];
+  yillar = ['2010', '2021', '2030', '2040'];
+
   constructor() { }
 
   ngOnInit(): void {

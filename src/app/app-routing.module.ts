@@ -6,6 +6,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { PipeComponent } from './pipe/pipe.component';
 import { InputOutputComponent } from './input-output/input-output.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { KullaniciListeComponent } from './kullanici-liste/kullanici-liste.component';
 
 const routes: Routes = [
   { path: 'hakkinda', component: HakkindaComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'pipe', component: PipeComponent },
   { path: 'input-output', component: InputOutputComponent },
   { path: 'directives', component: DirectivesComponent },
+  { path: 'kullanici-liste', component: KullaniciListeComponent },
   { path: '', component: AnasayfaComponent },
 ];
 

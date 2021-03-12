@@ -1,0 +1,6 @@
+<h2>Kullanici Listesi</h2>
+
+<p *ngFor="let kullanici of kullaniciListesi" >{{kullanici.ad}}</p>
+<hr>
+<p *ngIf="kullaniciListesiBackend.length === 0">Yükleniyor...</p>
+<p *ngFor="let kullanici of kullaniciListesiBackend">{{kullanici.ad}}</p>

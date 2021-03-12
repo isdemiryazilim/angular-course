@@ -12,6 +12,8 @@ import { InputOutputComponent } from './input-output/input-output.component';
 import { MerhabaComponent } from './merhaba/merhaba.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { ListeComponent } from './liste/liste.component';
+import { KullaniciListeComponent } from './kullanici-liste/kullanici-liste.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,13 @@ import { ListeComponent } from './liste/liste.component';
     InputOutputComponent,
     MerhabaComponent,
     DirectivesComponent,
-    ListeComponent
+    ListeComponent,
+    KullaniciListeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

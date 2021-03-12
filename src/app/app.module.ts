@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { PipeComponent } from './pipe/pipe.component';
 import { InputOutputComponent } from './input-output/input-output.component';
 import { MerhabaComponent } from './merhaba/merhaba.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MerhabaComponent } from './merhaba/merhaba.component';
     DataBindingComponent,
     PipeComponent,
     InputOutputComponent,
-    MerhabaComponent
+    MerhabaComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,

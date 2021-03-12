@@ -1,0 +1,11 @@
+<h2>Directives</h2>
+
+<p [ngClass]="kontrol() ? 'kirmizi-yazi'  : '' "> Bu bir hata. </p>
+
+<p *ngIf="yas > 30"> 30'dan büyükse bu görünecek. </p>
+<p *ngIf="yas <= 30"> 30'dan küçükse bu görünecek. </p>
+
+<p *ngFor="let isim of isimler">{{isim.ad}}</p>
+
+
+

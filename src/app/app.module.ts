@@ -8,6 +8,8 @@ import { HakkindaComponent } from './hakkinda/hakkinda.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { PipeComponent } from './pipe/pipe.component';
+import { InputOutputComponent } from './input-output/input-output.component';
+import { MerhabaComponent } from './merhaba/merhaba.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { PipeComponent } from './pipe/pipe.component';
     AnasayfaComponent,
     HakkindaComponent,
     DataBindingComponent,
-    PipeComponent
+    PipeComponent,
+    InputOutputComponent,
+    MerhabaComponent
   ],
   imports: [
     BrowserModule,

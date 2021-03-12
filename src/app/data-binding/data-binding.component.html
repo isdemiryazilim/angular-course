@@ -1,0 +1,8 @@
+<h2>Data Binding</h2>
+
+<p>{{ kullanici.ad }}, {{kullanici.soyad}} - {{kullanici.yas + 5}}</p>
+
+<button (click)='alertGoster()'> Göster </button>
+<br>
+<input (change)="mesajDegisti($event)" />
+{{mesaj}}

@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { AnasayfaComponent } from './anasayfa/anasayfa.component';
 import { HakkindaComponent } from './hakkinda/hakkinda.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PipeComponent } from './pipe/pipe.component';
 import { InputOutputComponent } from './input-output/input-output.component';
 import { MerhabaComponent } from './merhaba/merhaba.component';
@@ -15,6 +15,7 @@ import { ListeComponent } from './liste/liste.component';
 import { KullaniciListeComponent } from './kullanici-liste/kullanici-liste.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptor } from './token.interceptor';
+import { FormsComponent } from './forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +28,15 @@ import { TokenInterceptor } from './token.interceptor';
     MerhabaComponent,
     DirectivesComponent,
     ListeComponent,
-    KullaniciListeComponent
+    KullaniciListeComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     {

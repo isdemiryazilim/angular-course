@@ -19,4 +19,8 @@ export class KullaniciService {
   kullaniciListeleBackend() {
     return this.http.get('http://localhost:7070/egitim-kullanicilar');
   }
+
+  kullaniciKaydet(yeniKullanici: any) {
+    return this.http.post('http://localhost:7070/egitim-kullanici-ekle', yeniKullanici);
+  }
 }

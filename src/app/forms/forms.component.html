@@ -1,0 +1,23 @@
+<h2>Forms</h2>
+
+<form [formGroup]="kullaniciForm" (ngSubmit)="kaydet()">
+    <label>Ad : </label>
+    <input formControlName="ad">
+    <br>
+    <label>Soyad : </label>
+    <input formControlName="soyad">
+    <br>
+    <label>Şehir : </label>
+    <select formControlName="sehir">
+        <option value="hatay"> Hatay </option>
+        <option value="istanbul"> İstanbul </option>
+    </select>
+    <button type="submit" [disabled]="kullaniciForm.invalid">Kaydet</button>
+</form>
+
+<p>
+    {{ kullaniciForm.value | json }}
+</p>
+<p>
+    Valid : {{ !kullaniciForm.invalid }}
+</p>

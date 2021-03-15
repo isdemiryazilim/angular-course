@@ -18,6 +18,7 @@ import { TokenInterceptor } from './token.interceptor';
 import { FormsComponent } from './forms/forms.component';
 import { TranslocoRootModule } from './transloco/transloco-root.module';
 import { CokluDilComponent } from './coklu-dil/coklu-dil.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { CokluDilComponent } from './coklu-dil/coklu-dil.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    TranslocoRootModule
+    TranslocoRootModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {

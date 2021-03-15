@@ -19,7 +19,15 @@ import { FormsComponent } from './forms/forms.component';
 import { TranslocoRootModule } from './transloco/transloco-root.module';
 import { CokluDilComponent } from './coklu-dil/coklu-dil.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MaterialOrneklerComponent } from './material-ornekler/material-ornekler.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +41,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ListeComponent,
     KullaniciListeComponent,
     FormsComponent,
-    CokluDilComponent
+    CokluDilComponent,
+    MaterialOrneklerComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +51,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     ReactiveFormsModule,
     TranslocoRootModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatTableModule,
+    MatTabsModule,
+    MatSnackBarModule
   ],
   providers: [
     {

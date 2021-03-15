@@ -9,6 +9,7 @@ import { DirectivesComponent } from './directives/directives.component';
 import { KullaniciListeComponent } from './kullanici-liste/kullanici-liste.component';
 import { FormsComponent } from './forms/forms.component';
 import { CokluDilComponent } from './coklu-dil/coklu-dil.component';
+import { MaterialOrneklerComponent } from './material-ornekler/material-ornekler.component';
 
 const routes: Routes = [
   { path: 'hakkinda', component: HakkindaComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'kullanici-liste', component: KullaniciListeComponent },
   { path: 'forms', component: FormsComponent },
   { path: 'coklu-dil', component: CokluDilComponent },
+  { path: 'material-ornekler', component: MaterialOrneklerComponent },
   { path: '', component: AnasayfaComponent },
 ];
 

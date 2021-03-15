@@ -5,3 +5,6 @@ a {
 }
 html, body {  margin: 10px; padding: 8px; height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+table {
+    width: 100%;
+}

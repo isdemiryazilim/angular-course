@@ -1,8 +1,10 @@
 <h2>Forms</h2>
 
 <form [formGroup]="kullaniciForm" (ngSubmit)="kaydet()">
-    <label>Ad : </label>
-    <input formControlName="ad">
+    <mat-form-field appearance="fill">
+        <mat-label>Ad</mat-label>
+        <input formControlName="ad" matInput>
+    </mat-form-field>
     <br>
     <label>Soyad : </label>
     <input formControlName="soyad">

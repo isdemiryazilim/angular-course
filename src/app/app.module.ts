@@ -16,6 +16,8 @@ import { KullaniciListeComponent } from './kullanici-liste/kullanici-liste.compo
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptor } from './token.interceptor';
 import { FormsComponent } from './forms/forms.component';
+import { TranslocoRootModule } from './transloco/transloco-root.module';
+import { CokluDilComponent } from './coklu-dil/coklu-dil.component';
 
 @NgModule({
   declarations: [
@@ -29,14 +31,16 @@ import { FormsComponent } from './forms/forms.component';
     DirectivesComponent,
     ListeComponent,
     KullaniciListeComponent,
-    FormsComponent
+    FormsComponent,
+    CokluDilComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TranslocoRootModule
   ],
   providers: [
     {
